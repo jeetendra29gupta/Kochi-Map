@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochi Illustrated Natural Asset Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="row">
+
+        <div class="column left">
+            <h2>Most Visited Places</h2>
+            <br>
+            <input type="text" placeholder="&#128270; Search.." class="search" id="input-box" onkeyup="serach_place()">
+            <ul id="menu" class="menu">
+            </ul>
+        </div>
+
+        <div class="column right">
+            <div id="map"></div>
+        </div>
+
+    </div>
+</body>
+<script src="india_district.js"></script>
+<script src="app.js"></script>
+</html>
